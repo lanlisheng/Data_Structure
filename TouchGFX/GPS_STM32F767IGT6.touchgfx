@@ -1,0 +1,487 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Data_Collector",
+        "OverrideDefaultBufferSize": true,
+        "CanvasBufferSize": 15360,
+        "Components": [
+          {
+            "Type": "TiledImage",
+            "Name": "BackGround",
+            "Width": 1024,
+            "Height": 600,
+            "FileName": "__designer\\Blue_Textures_grey_wash_wall.png",
+            "Style": "Texture9"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "TopBar",
+            "Width": 1024,
+            "Height": 64,
+            "CustomContainerDefinitionName": "CompanyInfo"
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "DataList",
+            "X": 100,
+            "Y": 116,
+            "Width": 250,
+            "Height": 250,
+            "Direction": "South",
+            "Components": []
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "tableHead1",
+            "X": 100,
+            "Y": 68,
+            "Width": 924,
+            "Height": 48,
+            "CustomContainerDefinitionName": "TableHead"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CompanyInfo",
+        "Width": 1024,
+        "Height": 64,
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "Width": 1024,
+            "Height": 64,
+            "Color": {
+              "Red": 150,
+              "Green": 150,
+              "Blue": 150
+            },
+            "BorderColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "TextArea",
+            "Name": "CompanyName",
+            "X": 339,
+            "Y": 18,
+            "Width": 465,
+            "Height": 29,
+            "TextId": "__SingleUse_Q983",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "DataCollect_Element",
+        "Width": 924,
+        "Height": 48,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "BG_Image",
+            "Width": 924,
+            "Height": 48,
+            "RelativeFilename": "list_element_background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "DataRecord_Order",
+            "X": 53,
+            "Y": 10,
+            "Width": 24,
+            "Height": 29,
+            "TextId": "__SingleUse_TDN6",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OCKD",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Longtitude_Seconds",
+            "X": 850,
+            "Y": 13,
+            "Width": 42,
+            "Height": 22,
+            "TextId": "__SingleUse_EOM9",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_W26X",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_E32G",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Longtitude_Minutes",
+            "X": 810,
+            "Y": 13,
+            "Width": 26,
+            "Height": 22,
+            "TextId": "__SingleUse_1L4Q",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_6UU6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_SBPU",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Lattitude_Minutes",
+            "X": 670,
+            "Y": 13,
+            "Width": 26,
+            "Height": 22,
+            "TextId": "__SingleUse_3TKG",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OF23",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_TA5X",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Lattitude_Seconds",
+            "X": 709,
+            "Y": 13,
+            "Width": 42,
+            "Height": 22,
+            "TextId": "__SingleUse_NS5Z",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_0BV7",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_CTHY",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "EularAngle_Z",
+            "X": 628,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_06OM",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_M6RN",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "EularAngle_Y",
+            "X": 581,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_IVA2",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_YXXK",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "EularAngle_X",
+            "X": 534,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_F9KX",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_0R8J",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Magnetic_Z",
+            "X": 487,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_NEFZ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_5H5Q",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Magnetic_Y",
+            "X": 440,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_UE6W",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_YAUS",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Magnetic_X",
+            "X": 393,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_U75N",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_2NO5",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "AngularRate_Z",
+            "X": 346,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_C9Q8",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_329I",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "AngularRate_Y",
+            "X": 299,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_7F9I",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_02RB",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "AngularRate_X",
+            "X": 252,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_0TIT",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_0AVF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Acceleration_Z",
+            "X": 205,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_P1C3",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_WVRA",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Acceleration_Y",
+            "X": 158,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_ZKX6",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_07W1",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Acceleration_X",
+            "X": 111,
+            "Y": 13,
+            "Width": 8,
+            "Height": 22,
+            "TextId": "__SingleUse_FXYT",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_BM12",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "TableHead",
+        "Width": 924,
+        "Height": 48,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "BG_Image",
+            "Width": 924,
+            "Height": 48,
+            "RelativeFilename": "list_element_background.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "DataRecord_Order",
+            "X": 46,
+            "Y": 9,
+            "Width": 40,
+            "Height": 29,
+            "TextId": "__SingleUse_92FD",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Lattitude_Minutes",
+            "X": 705,
+            "Y": 9,
+            "Width": 40,
+            "Height": 29,
+            "TextId": "__SingleUse_SZJV",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Longtitude_Minutes",
+            "X": 838,
+            "Y": 9,
+            "Width": 40,
+            "Height": 29,
+            "TextId": "__SingleUse_7DQ0",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 1024,
+      "Height": 600
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Data_Collector",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 1024,
+        "Height": 600
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../GPS_STM32F767IGT6.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7"
+  },
+  "Version": "4.18.1"
+}

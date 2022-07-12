@@ -1,0 +1,4 @@
+../Core/Src/freertos.c:76:6:vApplicationGetIdleTaskMemory	24	static
+../Core/Src/freertos.c:91:6:MX_FREERTOS_Init	72	static
+../Core/Src/freertos.c:133:6:StartTouchGFXTask	16	static
+../Core/Src/freertos.c:150:6:StartGPSTask	16	static
