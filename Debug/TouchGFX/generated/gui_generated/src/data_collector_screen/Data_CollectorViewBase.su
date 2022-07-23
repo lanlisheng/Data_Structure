@@ -17,6 +17,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:394:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:471:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:481:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:505:10:void touchgfx::Drawable::setTouchable(bool)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:517:10:bool touchgfx::Drawable::isVisible() const	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:529:10:bool touchgfx::Drawable::isTouchable() const	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:568:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
@@ -56,13 +57,26 @@
 ../TouchGFX/generated/gui_generated/include/gui_generated/containers/TableHeadBase.hpp:16:13:virtual TableHeadBase::~TableHeadBase()	16	static
 ../TouchGFX/gui/include/gui/containers/TableHead.hpp:10:13:TableHead::~TableHead()	16	static
 ../TouchGFX/gui/include/gui/containers/TableHead.hpp:10:13:virtual TableHead::~TableHead()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:36:5:touchgfx::AbstractButton::AbstractButton()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:63:10:void touchgfx::AbstractButton::setAction(touchgfx::GenericCallback<const touchgfx::AbstractButton&>&)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:32:7:touchgfx::AbstractButton::~AbstractButton()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:32:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:34:5:touchgfx::Button::Button()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Data_CollectorPresenter>::~View()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Data_CollectorPresenter>::~View()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/data_collector_screen/Data_CollectorViewBase.hpp:21:13:Data_CollectorViewBase::~Data_CollectorViewBase()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/data_collector_screen/Data_CollectorViewBase.hpp:21:13:virtual Data_CollectorViewBase::~Data_CollectorViewBase()	16	static
-../TouchGFX/generated/gui_generated/src/data_collector_screen/Data_CollectorViewBase.cpp:10:1:Data_CollectorViewBase::Data_CollectorViewBase()	48	static
-../TouchGFX/generated/gui_generated/src/data_collector_screen/Data_CollectorViewBase.cpp:36:6:virtual void Data_CollectorViewBase::setupScreen()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/data_collector_screen/Data_CollectorViewBase.hpp:22:13:Data_CollectorViewBase::~Data_CollectorViewBase()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/data_collector_screen/Data_CollectorViewBase.hpp:22:13:virtual Data_CollectorViewBase::~Data_CollectorViewBase()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/data_collector_screen/Data_CollectorViewBase.hpp:26:26:FrontendApplication& Data_CollectorViewBase::application()	16	static
+../TouchGFX/generated/gui_generated/src/data_collector_screen/Data_CollectorViewBase.cpp:10:1:Data_CollectorViewBase::Data_CollectorViewBase()	64	static
+../TouchGFX/generated/gui_generated/src/data_collector_screen/Data_CollectorViewBase.cpp:42:6:virtual void Data_CollectorViewBase::setupScreen()	16	static
+../TouchGFX/generated/gui_generated/src/data_collector_screen/Data_CollectorViewBase.cpp:48:6:void Data_CollectorViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = Data_CollectorPresenter]	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:134:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:373:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = Data_CollectorViewBase; T1 = const touchgfx::AbstractButton&]	24	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<Data_CollectorViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<Data_CollectorViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:31:7:touchgfx::BoxWithBorder::~BoxWithBorder()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:31:7:virtual touchgfx::BoxWithBorder::~BoxWithBorder()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:39:7:touchgfx::TextArea::~TextArea()	16	static
@@ -71,3 +85,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:33:7:virtual touchgfx::TiledImage::~TiledImage()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:37:7:touchgfx::ListLayout::~ListLayout()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:37:7:virtual touchgfx::ListLayout::~ListLayout()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:31:7:touchgfx::Button::~Button()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:31:7:virtual touchgfx::Button::~Button()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Data_CollectorViewBase; T1 = const touchgfx::AbstractButton&]	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Data_CollectorViewBase; T1 = const touchgfx::AbstractButton&]	16	static

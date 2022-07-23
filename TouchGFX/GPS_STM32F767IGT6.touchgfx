@@ -2,6 +2,51 @@
   "Application": {
     "Screens": [
       {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "TiledImage",
+            "Name": "tiledImage1",
+            "Width": 1024,
+            "Height": 600,
+            "FileName": "__designer\\Blue_Textures_tweed.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "companyInfo1",
+            "Width": 1024,
+            "Height": 64,
+            "CustomContainerDefinitionName": "CompanyInfo"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 427,
+            "Y": 270,
+            "Width": 170,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Style": "Style4"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Data_Collector"
+            }
+          }
+        ]
+      },
+      {
         "Name": "Data_Collector",
         "OverrideDefaultBufferSize": true,
         "CanvasBufferSize": 15360,
@@ -39,9 +84,34 @@
             "Width": 924,
             "Height": 48,
             "CustomContainerDefinitionName": "TableHead"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 64,
+            "Y": 4,
+            "Width": 170,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Style": "Style4"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
@@ -443,7 +513,7 @@
       "Height": 600
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Data_Collector",
+    "StartupScreenName": "Screen1",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",

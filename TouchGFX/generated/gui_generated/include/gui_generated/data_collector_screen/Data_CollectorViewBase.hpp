@@ -12,6 +12,7 @@
 #include <gui/containers/CompanyInfo.hpp>
 #include <touchgfx/containers/ListLayout.hpp>
 #include <gui/containers/TableHead.hpp>
+#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 
 class Data_CollectorViewBase : public touchgfx::View<Data_CollectorPresenter>
@@ -34,8 +35,19 @@ protected:
     CompanyInfo TopBar;
     touchgfx::ListLayout DataList;
     TableHead tableHead1;
+    touchgfx::Button button1;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Data_CollectorViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
     /*
      * Canvas Buffer Size

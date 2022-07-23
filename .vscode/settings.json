@@ -3,6 +3,8 @@
         "main.h": "c",
         "usart.h": "c",
         "string.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "ft5206.h": "c",
+        "gt9147.h": "c"
     }
 }

@@ -5,13 +5,22 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.cpp 
+../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.cpp \
+../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.cpp \
+../TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.cpp \
+../TouchGFX/generated/images/src/__designer/image_Blue_Textures_tweed.cpp 
 
 OBJS += \
-./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.o 
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.o \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.o \
+./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.o \
+./TouchGFX/generated/images/src/__designer/image_Blue_Textures_tweed.o 
 
 CPP_DEPS += \
-./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.d 
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.d \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.d \
+./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.d \
+./TouchGFX/generated/images/src/__designer/image_Blue_Textures_tweed.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +30,7 @@ TouchGFX/generated/images/src/__designer/%.o TouchGFX/generated/images/src/__des
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer
 
 clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer:
-	-$(RM) ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.d ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.o ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.su
+	-$(RM) ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.su ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.su ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.d ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.o ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_grey_wash_wall.su ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_tweed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_tweed.o ./TouchGFX/generated/images/src/__designer/image_Blue_Textures_tweed.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer
 

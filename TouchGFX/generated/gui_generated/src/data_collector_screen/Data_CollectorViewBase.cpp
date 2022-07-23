@@ -7,7 +7,8 @@
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 
 
-Data_CollectorViewBase::Data_CollectorViewBase()
+Data_CollectorViewBase::Data_CollectorViewBase() :
+    buttonCallback(this, &Data_CollectorViewBase::buttonCallbackHandler)
 {
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
@@ -26,15 +27,31 @@ Data_CollectorViewBase::Data_CollectorViewBase()
 
     tableHead1.setXY(100, 68);
 
+    button1.setXY(64, 4);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    button1.setAction(buttonCallback);
+
     add(__background);
     add(BackGround);
     add(TopBar);
     add(DataList);
     add(tableHead1);
+    add(button1);
 }
 
 void Data_CollectorViewBase::setupScreen()
 {
     TopBar.initialize();
     tableHead1.initialize();
+}
+
+void Data_CollectorViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &button1)
+    {
+        //Interaction1
+        //When button1 clicked change screen to Screen1
+        //Go to Screen1 with no screen transition
+        application().gotoScreen1ScreenNoTransition();
+    }
 }

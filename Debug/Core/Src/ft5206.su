@@ -1,0 +1,4 @@
+../Core/Src/ft5206.c:13:9:FT5206_WR_Reg	24	static
+../Core/Src/ft5206.c:35:6:FT5206_RD_Reg	32	static
+../Core/Src/ft5206.c:54:9:FT5206_Init	48	static
+../Core/Src/ft5206.c:117:9:FT5206_Scan	32	static
